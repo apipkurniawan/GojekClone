@@ -25,7 +25,10 @@ const ScrollableProduct = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         style={styles.productContainer}>
-        <ScrollableItem img={ImgGoFoodBangka} title={'Martabak bangka'} />
+        <ScrollableItem
+          img={ImgGoFoodBangka}
+          title={'Martabak bangka belitung jakarta pusat'}
+        />
         <ScrollableItem img={ImgGoFoodKfc} title={'KFC Aeon Mall'} />
         <ScrollableItem img={ImgGoFoodGm} title={'Bakmi GM Aeon mall'} />
         <ScrollableItem img={ImgGoFoodOrins} title={'Sederhana minang'} />

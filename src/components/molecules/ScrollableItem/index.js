@@ -7,7 +7,11 @@ const ScrollableItem = props => {
       <View style={styles.container}>
         <Image source={props.img} style={styles.img} />
       </View>
-      <Text style={styles.title}>{props.title}</Text>
+      <Text style={styles.title}>
+        {props.title.length >= 20
+          ? props.title.substring(0, 20).concat('...')
+          : props.title}
+      </Text>
     </View>
   );
 };
