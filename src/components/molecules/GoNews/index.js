@@ -1,25 +1,27 @@
 import React from 'react';
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 
 import ImgBall from '../../../assets/dummy/sepak-bola.jpg';
 import LogoGojek from '../../../assets/logo/white.png';
+import Button from '../../atoms/Button';
+import Opacity from '../../atoms/Opacity';
 
-const GoNews = props => {
+const GoNews = () => {
   return (
     <View style={styles.container}>
       <View style={styles.banner}>
         <Image source={ImgBall} style={styles.img} />
-        <View style={styles.backGround} />
+        <Opacity />
         <View style={styles.logoContainer}>
           <Image source={LogoGojek} style={styles.logo} />
         </View>
       </View>
       <View style={styles.content}>
         <Text style={styles.title}>GO-NEWS</Text>
-        <Text style={styles.desc}>{props.content}</Text>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>READ</Text>
-        </TouchableOpacity>
+        <Text style={styles.desc}>
+          Dimas Drajat selamatkan penalty, Timnas U-23 kalahkan brunei
+        </Text>
+        <Button title="READ" />
       </View>
     </View>
   );
@@ -34,14 +36,6 @@ const styles = StyleSheet.create({
   },
   banner: {
     position: 'relative',
-  },
-  backGround: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'black',
-    opacity: 0.15,
-    borderRadius: 6,
   },
   img: {
     height: 200,
@@ -76,18 +70,5 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     color: '#7A7A7A',
     marginBottom: 11,
-  },
-  button: {
-    backgroundColor: '#61A756',
-    paddingHorizontal: 12,
-    paddingVertical: 11,
-    borderRadius: 4,
-    alignSelf: 'flex-end',
-  },
-  buttonText: {
-    fontSize: 13,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center',
   },
 });

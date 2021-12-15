@@ -12,7 +12,7 @@ import FooterBarIcon from '../../../components/molecules/FooterBarIcon';
 const FooterBar = () => {
   return (
     <View style={styles.container}>
-      <FooterBarIcon img={IconHomeActive} title="Home" />
+      <FooterBarIcon img={IconHomeActive} title="Home" active />
       <FooterBarIcon img={IconOrder} title="Orders" />
       <FooterBarIcon img={IconHelp} title="Help" />
       <FooterBarIcon img={IconInbox} title="Inbox" />

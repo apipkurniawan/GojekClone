@@ -5,7 +5,13 @@ const FooterBarIcon = props => {
   return (
     <View style={styles.container}>
       <Image style={styles.img} source={props.img} />
-      <Text style={[styles.title, styles.activeMode]}>{props.title}</Text>
+      <Text
+        style={[
+          styles.title,
+          props.active ? styles.activeMode : styles.inActiveMode,
+        ]}>
+        {props.title}
+      </Text>
     </View>
   );
 };
@@ -29,5 +35,8 @@ const styles = StyleSheet.create({
   },
   activeMode: {
     color: '#43Ab4A',
+  },
+  inActiveMode: {
+    color: '#545454',
   },
 });

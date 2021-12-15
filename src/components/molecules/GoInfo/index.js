@@ -4,6 +4,9 @@ import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import ImgGojek from '../../../assets/logo/gojek.png';
 import ImgFacebook from '../../../assets/dummy/facebook-connect.png';
 
+import Separator from '../../atoms/Separator';
+import Button from '../../atoms/Button';
+
 const GoInfo = () => {
   return (
     <View style={styles.container}>
@@ -22,10 +25,8 @@ const GoInfo = () => {
           </Text>
         </View>
       </View>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>CONNECT</Text>
-      </TouchableOpacity>
-      <View style={styles.separator} />
+      <Button title="CONNECT" />
+      <Separator style={styles.separator} />
     </View>
   );
 };
@@ -69,22 +70,7 @@ const styles = StyleSheet.create({
     color: '#4A4A4A',
     width: '80%',
   },
-  button: {
-    backgroundColor: '#61A756',
-    paddingHorizontal: 12,
-    paddingVertical: 11,
-    borderRadius: 4,
-    alignSelf: 'flex-end',
-  },
-  buttonText: {
-    fontSize: 13,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center',
-  },
   separator: {
-    borderBottomWidth: 1,
-    borderBottomColor: '#E8E9ED',
     marginTop: 16,
     marginBottom: -16,
   },

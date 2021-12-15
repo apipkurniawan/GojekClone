@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     marginTop: 18,
-    marginBottom: 18,
+    marginBottom: 30,
   },
   section: {
     flexDirection: 'row',

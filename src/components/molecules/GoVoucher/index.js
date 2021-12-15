@@ -1,15 +1,19 @@
 import React from 'react';
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 
 import ImgFood from '../../../assets/dummy/food-banner.jpg';
 import LogoGojek from '../../../assets/logo/white.png';
+
+import Separator from '../../atoms/Separator';
+import Button from '../../atoms/Button';
+import Opacity from '../../atoms/Opacity';
 
 const GoVoucher = () => {
   return (
     <View style={styles.container}>
       <View style={styles.banner}>
         <Image style={styles.img} source={ImgFood} />
-        <View style={styles.backGround} />
+        <Opacity />
         <View style={styles.logoContainer}>
           <Image source={LogoGojek} style={styles.logo} />
         </View>
@@ -19,13 +23,11 @@ const GoVoucher = () => {
             <Text style={styles.desc}>Quick, before they run out!</Text>
           </View>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button}>
-              <Text style={styles.buttonText}>GET VOUCHER</Text>
-            </TouchableOpacity>
+            <Button title="GET VOUCHER" />
           </View>
         </View>
       </View>
-      <View style={styles.separator} />
+      <Separator style={styles.separator} />
     </View>
   );
 };
@@ -81,31 +83,15 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingLeft: 12,
   },
-  button: {
-    backgroundColor: '#61A756',
-    paddingHorizontal: 12,
-    paddingVertical: 11,
-    borderRadius: 4,
-    alignSelf: 'stretch',
-  },
-  buttonText: {
-    fontSize: 13,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center',
-  },
   separator: {
-    borderBottomWidth: 1,
-    borderBottomColor: '#E8E9ED',
     marginTop: 16,
     marginBottom: -16,
   },
-  backGround: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'black',
-    opacity: 0.15,
-    borderRadius: 6,
-  },
+  // button: {
+  //   backgroundColor: '#61A756',
+  //   paddingHorizontal: 12,
+  //   paddingVertical: 11,
+  //   borderRadius: 4,
+  //   alignSelf: 'stretch',
+  // }
 });

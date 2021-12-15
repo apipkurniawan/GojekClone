@@ -7,7 +7,9 @@ import ImgGoFoodKfc from '../../../assets/dummy/go-food-kfc.jpg';
 import ImgGoFoodOrins from '../../../assets/dummy/go-food-orins.jpg';
 import ImgGoFoodPakBos from '../../../assets/dummy/go-food-pak-boss.jpg';
 import LogoGoFood from '../../../assets/logo/go-food.png';
+
 import ScrollableItem from '../../../components/molecules/ScrollableItem';
+import Separator from '../../../components/atoms/Separator';
 
 const ScrollableProduct = () => {
   return (
@@ -29,7 +31,7 @@ const ScrollableProduct = () => {
         <ScrollableItem img={ImgGoFoodOrins} title={'Sederhana minang'} />
         <ScrollableItem img={ImgGoFoodPakBos} title={'Ayam Pak Bos'} />
       </ScrollView>
-      <View style={styles.separator} />
+      <Separator />
     </View>
   );
 };
@@ -70,11 +72,6 @@ const styles = StyleSheet.create({
   productContainer: {
     flexDirection: 'row',
     paddingLeft: 16,
-  },
-  separator: {
-    borderBottomWidth: 1,
-    borderBottomColor: '#E8E9ED',
-    marginTop: 16,
-    marginHorizontal: 16,
+    marginBottom: 16,
   },
 });
