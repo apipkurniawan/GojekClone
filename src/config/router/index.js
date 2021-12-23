@@ -66,9 +66,10 @@ const BottomTab = () => {
         name="Inbox"
         component={Inbox}
         options={{
+          tabBarBadge: 3,
           tabBarLabel: 'Inbox',
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="inbox" color={color} size={24} />
+            <MaterialCommunityIcons name="inbox" color={color} size={25} />
           ),
         }}
       />
