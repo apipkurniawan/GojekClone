@@ -9,9 +9,7 @@ import Divider from '../../../components/atoms/Divider';
 
 import ScrollableProduct from '../../../containers/organisms/ScrollableProduct';
 import HomeMainFeature from '../../../containers/organisms/HomeMainFeature';
-import FooterBar from '../../../containers/organisms/FooterBar';
 import HomeGoPay from '../../../containers/organisms/HomeGoPay';
-
 class Home extends Component {
   render() {
     return (
@@ -28,7 +26,6 @@ class Home extends Component {
           <GoVoucher />
           <ScrollableProduct />
         </ScrollView>
-        <FooterBar />
       </View>
     );
   }
