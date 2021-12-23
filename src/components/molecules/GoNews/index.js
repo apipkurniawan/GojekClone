@@ -6,7 +6,7 @@ import LogoGojek from '../../../assets/logo/white.png';
 import Button from '../../atoms/Button';
 import Opacity from '../../atoms/Opacity';
 
-const GoNews = () => {
+const GoNews = ({onPress}) => {
   return (
     <View style={styles.container}>
       <View style={styles.banner}>
@@ -21,7 +21,7 @@ const GoNews = () => {
         <Text style={styles.desc}>
           Dimas Drajat selamatkan penalty, Timnas U-23 kalahkan brunei
         </Text>
-        <Button title="READ" />
+        <Button title="READ" onPress={onPress} />
       </View>
     </View>
   );
