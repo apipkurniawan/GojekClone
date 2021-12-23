@@ -24,6 +24,8 @@ const BottomTab = () => {
       initialRouteName="Beranda"
       labelStyle={styles.labelTab}
       screenOptions={({route}) => ({
+        tabBarStyle: {paddingBottom: 5, paddingTop: 5},
+        tabBarBadgeStyle: {paddingTop: 2, top: -3},
         tabBarActiveTintColor: '#61A756',
         tabBarInactiveTintColor: 'gray',
       })}>
